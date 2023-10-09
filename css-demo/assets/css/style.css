@@ -1,6 +1,6 @@
 /* ------ style for css-demo------ */
 
-*  ---------------Box Sizing-----------------  */
+/*  ---------------Box Sizing-----------------  */
 
 html {
   box-sizing: border-box;
@@ -9,6 +9,18 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+}
+/*  ---------------Responsive Images-----------------  */
+img{
+  max-width: 100%;
+  height: auto;
+}
+/*  ---------------Utility Classes-----------------  */
+
+.container{
+  max-width:80vw;
+  margin:20px auto;
+
 }
 /* ------- Global styles ------ */
 body{
@@ -74,4 +86,76 @@ transition: .5s;
 }
 header.primary nav ul li a:hover{
   background-color:rgba(0,0,0,.8);
+}
+#intro{
+  border-bottom: 1px solid #c0c0c0;
+  padding-bottom: 14px;
+}
+#intro{
+  color:#000000;
+  border-bottom: 1px dotted #c0c0c0;
+}
+
+#content{
+  display: flex;
+  flex-direction: row;
+  gap:20px;
+}
+#content .post{
+  box-shadow: 0 4px 8px rgba(0,0,0,.4);
+  padding: 10px;
+  border-radius: 4px;
+  font-size: .8rem;
+  transition: 0.5s;
+
+}
+#content article.post:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+article.post figure{
+  margin: 0;
+}
+article.post time.post-date, article.post figcaption,
+article.post .post-meta{
+  text-transform: uppercase;
+  color: #e491d5;
+}
+article.post a{
+  color: #e491d5;
+}
+article.post a:hover{
+  text-decoration:none;
+}
+article.post img{
+  border:1px solid #e491d5
+  padding:2px;
+  margin:10px outo;
+
+}
+aside[role="complementary"]{
+  background-color: rgb(208, 187, 227);
+  color: #ffffff;
+  padding: 1.9rem;
+}
+aside .container{
+  display:flex;
+  flex-direction:row;
+  gap:40px; 
+}
+
+
+
+/*  --------------- Media Queries -----------------  */
+@media screen and (max-width:600px) {
+  header.primary nav ul{
+    flex-direction: column;
+    max-width:250px ;
+    margin: auto;
+    gap: 10px;
+  }
+  header.primary nav ul a{
+
+    display: block;
+  }
 }
