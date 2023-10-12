@@ -20,7 +20,27 @@ img{
 .container{
   max-width:80vw;
   margin:20px auto;
-
+}
+.img-right{
+float:right;
+margin: 10px 0 10px 20px;
+border: 5px double #e491d5;
+padding: 5px;
+box-shadow: -4px 4px 1px  #e2a5ea;
+}
+.img-left{
+  float:right;
+  margin: 10px 0 10px 20px;
+  border: 5px double #e491d5;
+  padding: 5px;
+  box-shadow: -4px 4px 1px  #e2a5ea;
+}
+.img-center{
+  display: block;
+  margin: 20px auto;
+  border: 5px double #e2a5ea;
+  padding:5px;
+  box-shadow: -4px 4px 1px  #e2a5ea ;
 }
 /* ------- Global styles ------ */
 body{
@@ -29,6 +49,9 @@ body{
 body{
     font-family: 'Roboto', sans-serif;
 font-family: 'Roboto Condensed', sans-serif;
+background-image: url("../img/gord.jpeg");
+background-repeat:no-repeat;
+
 
 }
 header.primary{
@@ -129,9 +152,12 @@ article.post a:hover{
 }
 article.post img{
   border:1px solid #e491d5
-  padding:2px;
+  padding 2px;
   margin:10px outo;
-
+}
+#practice h2{
+  color: #e491d5;
+  border-bottom: 1px solid #e491d5;
 }
 aside[role="complementary"]{
   background-color: rgb(208, 187, 227);
@@ -142,6 +168,23 @@ aside .container{
   display:flex;
   flex-direction:row;
   gap:40px; 
+}
+aside .container a:last-of-type{
+color: #e491d5;
+display: block;
+text-align: right;
+font-size: .8rem;
+margin-top: 10px;
+}
+aside footer{
+  display: none;
+}
+#colophon{
+  border: color #e491d5;
+  padding:10px;
+  color:#e491d5;
+  text-align:center;
+
 }
 
 
@@ -158,4 +201,11 @@ aside .container{
 
     display: block;
   }
+}
+#content, aside .container {
+  flex-direction: column;
+}
+#content img{
+  display: block;
+  margin:auto;
 }
