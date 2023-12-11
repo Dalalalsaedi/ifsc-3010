@@ -271,13 +271,15 @@ aside article.widget {
 }
 
 .widget.overview table td {
-  border-bottom: 1px solid #060505;
+  border-bottom: 1px solid #fffefe;
   padding: 10px;
+  color: #fffefe;
   
 }
 
 .widget.overview table td:nth-child(even) {
   text-align: right;
+  color: #fffefe;
   
 }
 aside article a:link,
